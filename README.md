@@ -83,7 +83,7 @@ Alternatively, you can use the require method just as you are using Node.js.
 
 ### Examples
 
-- simple [examples/simple](https://github.com/nodebowl/nodebowl/examples/simple)
+- simple [examples/simple](https://github.com/nodebowl/nodebowl/blob/master/examples/simple/index.html)
 - webpack [examples/webpack](https://github.com/nodebowl/nodebowl/examples/webpack)
 
 ### Dev
