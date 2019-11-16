@@ -1,15 +1,31 @@
 <script src="../../dist/nodebowl.js"></script>
+<button onclick="onClick()">click, run index.js</button>
+
+<div>
+  <p>/index.js</p>
+  <textarea id="index" style="width: 600px;height: 100px;">
+const num = require('./foo');
+alert(num);
+  </textarea>
+</div>
+
+
+<div>
+  <p>/foo.js</p>
+  <textarea id="foo" style="width: 600px;height: 100px;">
+module.exports = 1;
+  </textarea>
+</div>
+
+
 <script>
+
   const { fs, run } = window.nodebowl;
 
-  fs.writeFileSync('/foo.js', `
-    module.exports = 1;
-  `);
+  function onClick() {
+    fs.writeFileSync('/index.js', document.getElementById('index').value);
+    fs.writeFileSync('/foo.js', document.getElementById('foo').value);
+    run('index.js');
+  }
 
-  fs.writeFileSync('/index.js', `
-    const num = require('./foo');
-    alert(num);
-  `);
-
-  run('/index.js');
 </script>
