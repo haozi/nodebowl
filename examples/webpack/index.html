@@ -70,7 +70,7 @@ webpack({
   fs.mkdirSync('/app/src');
 
   // install node_modules
-  helpers.installFromZip('node_modules.zip').then(() => {
+  helpers.installFromZip('https://unpkg.com/nodebowl/examples/webpack/node_modules.zip').then(() => {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('compile').style.display = 'block';
   });
