@@ -1,6 +1,6 @@
 {
   "name": "nodebowl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "nodejs in browser",
   "main": "dist/nodebowl.js",
   "scripts": {
