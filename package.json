@@ -1,0 +1,43 @@
+{
+  "name": "nodebowl",
+  "version": "0.0.2",
+  "description": "nodejs in browser",
+  "main": "dist/nodebowl.js",
+  "scripts": {
+    "build": "BUILD=1 rollup -c",
+    "dev": "concurrently \"http-server\" \"rollup -c -w\""
+  },
+  "authors": [
+    "JIACHENG9 <https://github.com/JIACHENG9>"
+  ],
+  "homepage": "https://github.com/nodebowl/nodebowl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodebowl/nodebowl"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "http-server": "^0.11.1",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "buffer-es6": "^4.9.3",
+    "create-hash": "^1.2.0",
+    "debug": "^4.1.1",
+    "domain-browser": "^1.2.0",
+    "inherits": "^2.0.4",
+    "is-arguments": "^1.0.4",
+    "is-generator-function": "^1.0.7",
+    "jszip": "^3.2.2",
+    "memfs-nodebowl": "^2.16.1",
+    "path-browserify": "^1.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

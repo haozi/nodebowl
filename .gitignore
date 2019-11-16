@@ -1,0 +1,8 @@
+node_modules
+dist
+test-local
+yarn-error.log
+.DS_Store
+examples/*.zip
+.DS_Store
+webpacktest
