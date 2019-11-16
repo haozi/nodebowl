@@ -96,4 +96,4 @@ $ open http://localhost:8080/examples/simple/index.html
 
 ### Contributors
 
-Welcom issue and pr, more details will be explained later.
+Welcome issue and pr, more details will be explained later.
