@@ -38,9 +38,9 @@ $ npm install nodebowl
 or import it
 
 ```js
-import nodebowl from 'nodebowl';
+import * as nodebowl from 'nodebowl';
 
-const { fs, run } = window.nodebowl;
+const { fs, run } = nodebowl;
 ```
 
 ### API
