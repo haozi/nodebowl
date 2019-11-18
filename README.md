@@ -16,12 +16,8 @@ Put node in a bowl.
 
 ## Getting Started
 
-```
-$ npm install nodebowl
-```
-
 ```html
-<script src="node_modules/nodebowl/dist/nodebowl.js"></script>
+<script src="https://unpkg.com/nodebowl/dist/nodebowl.js"></script>
 <script>
   const { fs, run } = window.nodebowl;
   fs.writeFileSync('/foo.js', `
@@ -35,13 +31,22 @@ $ npm install nodebowl
 </script>
 ```
 
-or import it
+or install and import it
+
+```
+$ npm install nodebowl
+```
 
 ```js
 import * as nodebowl from 'nodebowl';
 
 const { fs, run } = nodebowl;
 ```
+
+### Examples
+
+- simple [code](https://github.com/nodebowl/nodebowl/tree/master/examples/simple) [demo](https://nodebowl.com/static/examples/simple.html)
+- webpack [code](https://github.com/nodebowl/nodebowl/tree/master/examples/webpack) [demo](https://nodebowl.com/static/examples/webpack.html)
 
 ### API
 
@@ -74,17 +79,142 @@ run('./dir/index.js', ['--v']); // node ./dir/index.js --v
 
 When you need to download the zip file like node_modules, you can use this helper method.
 
-#### Other API
+API emulates Node.js API:
 
-Other API emulates Node.js API, includes: fs, path, etc...
+#### fs
 
-Alternatively, you can use the require method just as you are using Node.js.
+```js
+const { fs } = nodebowl;
+```
 
+#### path
 
-### Examples
+```js
+const { path } = nodebowl;
+```
 
-- simple [code](https://github.com/nodebowl/nodebowl/tree/master/examples/simple) [demo](https://nodebowl.com/static/examples/simple.html)
-- webpack [code](https://github.com/nodebowl/nodebowl/tree/master/examples/webpack) [demo](https://nodebowl.com/static/examples/webpack.html)
+#### os
+
+```js
+const { os } = nodebowl;
+```
+
+#### module
+
+```js
+const { module } = nodebowl;
+```
+
+#### constants
+
+```js
+const { constants } = nodebowl;
+```
+
+#### stream
+
+```js
+const { stream } = nodebowl;
+```
+
+#### buffer
+
+```js
+const { buffer } = nodebowl;
+```
+
+#### util
+
+```js
+const { util } = nodebowl;
+```
+
+#### events
+
+```js
+const { events } = nodebowl;
+```
+
+#### querystring
+
+```js
+const { querystring } = nodebowl;
+```
+
+#### punycode
+
+```js
+const { punycode } = nodebowl;
+```
+
+#### url
+
+```js
+const { url } = nodebowl;
+```
+
+#### http
+
+```js
+const { http } = nodebowl;
+```
+
+#### https
+
+```js
+const { https } = nodebowl;
+```
+
+#### assert
+
+```js
+const { assert } = nodebowl;
+```
+
+#### timers
+
+```js
+const { timers } = nodebowl;
+```
+
+#### console
+
+```js
+const { console } = nodebowl;
+```
+
+#### vm
+
+```js
+const { vm } = nodebowl;
+```
+
+#### zlib
+
+```js
+const { zlib } = nodebowl;
+```
+
+#### tty
+
+```js
+const { tty } = nodebowl;
+```
+
+#### domain
+
+```js
+const { domain } = nodebowl;
+```
+
+#### crypto
+
+```js
+const { crypto } = nodebowl;
+```
+
+Alternatively, you can use the `require` and `process` just as you are using Node.js.
+
 
 ### Dev
 
