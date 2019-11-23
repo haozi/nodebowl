@@ -21,7 +21,6 @@ import tty from './builtins/tty';
 import domain from 'domain-browser';
 import crypto from './builtins/crypto';
 import run from './run';
-import helpers from './helpers';
 import child_process from './builtins/child_process';
 import { vol } from 'memfs-nodebowl';
 
@@ -56,5 +55,4 @@ export {
   crypto,
   child_process,
   run,
-  helpers,
 };

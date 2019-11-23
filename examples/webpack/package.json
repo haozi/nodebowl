@@ -1,6 +1,0 @@
-{
-  "name": "examples-webpack",
-  "dependencies": {
-    "webpack": "^4.41.2"
-  }
-}
